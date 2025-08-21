@@ -1,6 +1,6 @@
 $ColorWhite: #fff;
 $ColorBlack: #000;
-$ColorGrey: #555555;
+$ColorGrey: #6d6d6d;
 $ColorWarning: #ebd002;
 $ColorBackground_01: $ColorWhite;
 $ColorBackground_02: #ebe8e8;
@@ -10,9 +10,9 @@ $baseBorderRadius: 2px;
 
 $fontSizeH1-Modified: $baseSize * 3;
 $fontSizeH2: $baseSize * 5;
-$fontSizeH3: $baseSize * 2.5;
+$fontSizeH3: $baseSize * 3;
 $fontSizeH4: $baseSize * 1.8;
-$fontSizeParagraph: $baseSize;
+$fontSizeParagraph: $baseSize * 1.4;
 $fontSizeFooterParagraph: $baseSize + 2px;
 
 $paddingTopForSection: $baseSize * 8;
@@ -48,6 +48,8 @@ h3 {
 
 p {
     color: $ColorGrey;
+    font-size: $fontSizeParagraph;
+    font-style: italic;
 }
 
 
@@ -163,10 +165,16 @@ main {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    width: 80%;
+                    margin: 0 auto;
 
                     h4,
                     p {
                         text-align: center;
+                    }
+
+                    p {
+                        font-size: $fontSizeParagraph;
                     }
                 }
             }
@@ -200,8 +208,9 @@ main {
 
                 .text-box {
                     width: 100%;
+                    padding: $baseSize * 2 0;
 
-                    h3,
+                    h4,
                     p {
                         text-align: center;
                     }
